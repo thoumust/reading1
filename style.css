@@ -1,0 +1,674 @@
+*{
+	margin:  0;
+	padding:  0;
+	font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	background: #ffffff;
+	color: #000000;
+}
+#header{
+	width: 100%;
+	height:130vh;
+	background-size: cover;
+	background-position: center;
+}
+
+.container{
+	padding: 0 ;
+	
+}
+/*-----------------------------NAVBAR-CSS--------------------------------------*/
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+    margin: auto;
+    padding: 10px 60px 10px 10px;
+    position: sticky; top: 0;
+    background-color: white;
+    
+}
+.logo{
+	width: 160px;
+	display: flex;
+  margin-left: 100px;
+  margin-top: 10px;
+}
+nav .blue ul{
+    background: #039be5;
+}
+nav ul li{
+	display: inline-block;
+	list-style: none;
+	margin: 10px 20px;
+}
+nav ul li a{
+	color: #000000;
+	text-decoration: none;
+	font-size: 18px;
+	position: relative;
+  line-height: 60px;
+}
+nav ul li a::after{
+	content: '';
+	width: 0;
+	height: 3px;
+	background: #66df6d;
+	position: absolute;
+	left: 0;
+	bottom: -6px;
+	transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+	width: 100%;
+}
+nav a.active{
+	border-bottom: 2px #66df6d;
+}
+/*-----------------------------NAVBAR-CSS--------------------------------------*/
+
+
+/*-----------------------------Logout-CSS--------------------------------------*/
+.scene {
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+ }
+ 
+ .cube {
+  color: #ccc;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  transition: all 0.85s cubic-bezier(.17,.67,.14,.93);
+  transform-style: preserve-3d;
+  transform-origin: 100% 50%;
+  width: 10em;
+  height: 2em;
+ }
+ 
+ .cube:hover {
+  transform: rotateX(-90deg);
+ }
+ 
+ .side {
+  box-sizing: border-box;
+  position: absolute;
+  display: inline-block;
+  height: 4em;
+  width: 10em;
+  text-align: center;
+  padding-top: 1.5em;
+  font-weight: bold;
+ }
+ 
+ .top {
+  background: #66df6d;
+  color: white;
+  transform: rotateX(90deg) translate3d(0, 0, 2em);
+  box-shadow: inset 0 0 0 5px #fff;
+ }
+ 
+ .front {
+  background: #039be5;
+  color: #fff;
+  box-shadow: inset 0 0 0 5px #fff;
+  transform: translate3d(0, 0, 2em);
+ }
+ /*-----------------------------Logout-CSS--------------------------------------*/
+
+ /*-----------------------------Reminders-CSS--------------------------------------*/
+.header-text h1{
+	font-size: 40px;
+  margin-left: 6%;
+}
+.header-text-pending h1{
+    font-size: 40px;
+    margin-top: 10px;
+    margin-left: 6%;
+}
+.card {
+    --border-radius: 0.75rem;
+    --primary-color: #66df6d;
+    --secondary-color: #039be5;
+    width: 340px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    background: #f0f0f0;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 3%);
+    margin-top: 10px;
+    display: inline-block;
+    margin-left: 2%;
+  }
+.card-container{
+  margin-left: 8%;
+}
+
+  
+.arrow {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 3%;
+  color: #000;
+  margin: auto;
+  margin-bottom:3.2%;
+}
+  .card > * + * {
+    margin-top: 20px;
+  }
+  
+  .card .card__content {
+    color: var(--secondary-color);
+    font-size: 2rem;
+  }
+  .card .card__content-service {
+    color: black;
+    font-size: 1rem;
+  }
+  
+  .card h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #66df6d;
+  }
+  
+  .card .card__date {
+    color: #6e6b80;
+    font-size: 0.8rem;
+  }
+
+/*-----------------------------Reminders-CSS--------------------------------------*/
+
+/*-----------------------------PendingBooking-CSS--------------------------------------*/
+ .box {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 10px;
+    width: 1600px;
+    height: 700px;
+    border-radius: 30px;
+    background: #e9e9e9;
+    box-shadow: 15px 15px 30px #bebebe,
+               -15px -15px 30px #ffffff;
+  }
+.box .row{
+    display: flex;
+	justify-content: space-between;
+	width: 85%;
+    margin-top: 25px;
+    
+}
+.column-name ul li{
+	list-style: none;
+	margin-top: 20px;
+    text-align:start;
+    
+}
+.column-service ul li{
+	list-style: none;
+	margin-top: 20px;
+    text-align:start;   
+}
+.column-sched h2{
+    padding-left: 40px;
+}
+.column-sched ul li{
+	list-style: none;
+	margin-top: 20px;
+    text-align:start;   
+}
+.column-action ul li{
+	list-style: none;
+	margin-top: 20px;
+    text-align:start;   
+}
+.column-action h2{
+    padding-left: 80px;
+}
+.row .container-table table{
+  width: 100%;
+}
+/*-----------------------------PendingBooking-CSS--------------------------------------*/
+
+
+/*-----------------------------PatientList-CSS--------------------------------------*/
+.container-table{
+  margin: auto;
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+table {
+  width: 70%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.goto {
+  width: 10em;
+  height: 2.6em;
+  margin: 0.5em;
+  background: #66df6d;
+  color: white;
+  border: none;
+  border-radius: 0.625em;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.goto:hover {
+  color: black;
+}
+
+.goto:after {
+  content: "";
+  background: white;
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.5s;
+}
+
+.goto:hover:after {
+  transform: skewX(-45deg) scale(1, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+
+/*-----------------------------Calendar-CSS--------------------------------------*/
+.calendar{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: auto;
+}
+.calendar .container{
+  margin-top: 10px;
+}
+/*-----------------------------Calendar-CSS--------------------------------------*/
+
+  /*-----------------------------DentalGallery-CSS--------------------------------------*/
+  .card-container-dg{
+    margin-left: 11%;
+  }
+  .card-dg {
+  width: 450px; 
+  height: 500px;
+  margin: auto;
+  padding: 12px;
+  margin-left: 3%;
+  margin-top: 15px;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  display: inline-block;
+  border-radius: 25px;
+  }
+  .card-dg:hover {
+    translate: 0 -10px;
+    .card-title-dg {
+      color: #039be5;
+    }
+    .card-body-dg {
+      color: #000;
+    }
+    .App-button {
+      color: #ffffff;
+      background-color: #039be5;
+    }
+  }
+  
+  .card-title-dg {
+    font-size: 18px;
+    font-weight: 600;
+    color: #66df6d;
+    margin: 15px 0 0 10px;
+  }
+  
+  .card-image-dg {
+    margin: auto;
+    min-height: 170px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    background: #eaeaea;
+    box-shadow: inset 5px 5px 3px #d5d5d5,
+              inset -5px -5px 3px #d0d0d0;
+  }
+
+  .card-image-dg img {
+    margin: auto;
+    width: 260px;
+    height: 260px;
+    background-color: transparent;
+    border-radius: 15px;
+    background: transparent;
+    display: block;
+  }
+  
+  .card-body-dg {
+    margin: 13px 0 0 10px;
+    color: rgb(174, 174, 174);
+    font-size: 15px;
+    white-space: normal;
+  }
+  
+  .footer {
+    float: right;
+    margin: auto;
+    padding-top: .1%;
+    padding-bottom: 5%;
+    padding-right: 1%;
+    font-size: 13px;
+    color: #b3b3b3;
+  }
+  
+  .App-button {
+    padding: 10px 20px;
+    background-color: #66df6d;
+    color: rgb(253, 253, 253);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    border-color: transparent;
+    border-radius: 5em;
+    margin-top: 20px;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  
+
+  
+  /*-----------------------------DentalGallery-CSS--------------------------------------*/
+  
+ /*-----------------------------Messages-CSS--------------------------------------*/
+
+ .card-msg {
+  width: 1600px; 
+  margin: auto;
+  margin-top: 10px;
+  height: 70px;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  display: flex;
+  text-align: center;
+}
+
+.card-msg .sent{
+  width:50px;
+  margin-left: 10px;
+}
+
+.card-msg h2{
+  margin: 1.2%;
+  margin-left: 10px;
+  float: left;
+}
+
+/*-----------------------------Appointments-CSS--------------------------------------*/
+
+.box-apt .row-apt{
+  display: flex;
+	justify-content: space-between;
+	width: 75%;
+  margin-top: 15px;
+  margin-left: 17%;
+}
+.column-apt-ass{
+  margin-right: 2%;
+}
+.column-apt-ds{
+  margin-right: 8%;
+}
+
+.card-apt {
+  width: 1600px; 
+  margin: auto;
+  margin-top: 10px;
+  height: 65px;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  display: flex;
+  text-align: center;
+}
+.arrow1{
+  width: 2%;
+  margin-left: 93%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/*-----------------------------Login-CSS--------------------------------------*/
+
+
+  /*----responsive-----*/
+@media screen and (max-width: 800px) {
+  .card {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+.card-container button {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 800px) {
+  .card-dg {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+.card-container-dg button {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/*-----------------------------Booking Form-CSS--------------------------------------*/
+.form {
+  width: 60vw;
+  background-color: #fdfdfd;
+  margin: 45px auto;
+  padding: 2em;
+  max-width: 500px;
+  min-width: 300px;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
+  color: #281C2D;
+  border-radius: 55px;
+}
+#survey {
+  width: 40vw;
+  max-width: 300px;
+  min-width: 100px;
+  margin:auto;
+
+  padding-bottom: 2em;
+  color: #ffffff;
+}
+.form h1,p{
+  margin: 0 auto;
+  text-align: center;
+
+}
+#desc {
+  margin-top: 5%;
+  text-align: center;
+}
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #dfdfdf;
+}
+.card-container-forms label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.card-forms input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
+}
+
+.card-forms input, textarea {
+  background-color: #f8f8f8;
+  border-color: transparent;
+  height: 35px;
+}
+#dropdown {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+  border-radius: 20px;
+  border-style: transparent;
+}
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+#button1 {
+  display: block;
+  cursor: pointer;
+  width: 60%;
+  margin: 1em auto;
+  height: 2.5em;
+  font-size: 1.1rem;
+  font-weight:  bold;
+  background-color: #66df6d;
+  border-color: transparent;
+  min-width: 300px;
+  border-radius: 20px;
+  color: white;
+  transition: transform .2s;
+}
+#button1:hover{
+  transform:scale(1.2)
+}
+/*-----------------------------Booking Form-CSS--------------------------------------*/
+
+/*-----------------------------Dental Chart-CSS--------------------------------------*/
+.chart-container{
+  margin-left: 20%;
+}
+.dchart{
+  width: 90px; 
+  height: 180px;
+  margin: auto;
+  padding: 12px;
+  margin-left: 1%;
+  margin-top: 15px;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  display: inline-block;
+  border-radius: 25px;
+}
+
+.dchart img{
+  width: 50%;
+  margin-left: 28%;
+}
+.previous{
+  margin-left: 6%;
+  margin-bottom: 5px;
+}
+.chart-container select{
+  margin: 10px 0 0 0;
+  margin-left: 3%;
+  width: 95%;
+  min-height: 2em;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+  font-weight: bold;
+}
+  select:focus{
+    outline:none;
+}
+.dchart h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.chart-container1{
+  margin-left: 20%;
+}
+
+.chart-container1 select{
+  margin: 10px 0 0 0;
+  margin-left: 3%;
+  width: 95%;
+  min-height: 2em;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+  font-weight: bold;
+}
+.box-chart {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 10px;
+  width: 1280px;
+  height: 520px;
+  border-radius: 30px;
+  background: #e9e9e9;
+  box-shadow: 15px 15px 30px #bebebe,
+             -15px -15px 30px #ffffff;
+}
+.box-chart .row-chart{
+  display: flex;
+justify-content: space-between;
+width: 85%;
+  margin-top: 25px;
+}
+.row-chart .container-table table{
+  width: 100%;
+}
+/*-----------------------------Dental Chart-CSS--------------------------------------*/
+
